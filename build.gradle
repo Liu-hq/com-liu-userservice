@@ -5,7 +5,6 @@ buildscript {
 
     repositories {
         mavenLocal()
-        maven { url "http://192.168.0.224:8081/repository/maven-public/" }
         maven { url "http://repo.spring.io/libs-snapshot" }
         mavenCentral()
     }
@@ -36,7 +35,6 @@ task copyJar(dependsOn:build ,type:Copy){
 
 repositories {
     mavenLocal()
-    maven { url "http://192.168.0.224:8081/repository/maven-public/" }
     maven { url "http://repo.spring.io/libs-snapshot" }
     maven { url "http://repo.spring.io/libs-snapshot" }
     mavenCentral()
