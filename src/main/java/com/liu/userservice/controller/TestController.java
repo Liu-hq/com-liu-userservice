@@ -15,10 +15,9 @@ public class TestController {
     @Autowired
     private KafkaTemplate<String,String> kafkaTemplate;
 
-    @RequestMapping(value="/userservice")
+    @RequestMapping(value="/userservice/api")
     public String goUploadImg() {
-
-        return "userservice";
+        return "userservice1";
     }
 
     @PostMapping(value="/send")
