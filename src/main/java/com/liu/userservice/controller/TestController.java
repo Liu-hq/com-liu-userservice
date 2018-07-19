@@ -17,6 +17,11 @@ public class TestController {
 
     @RequestMapping(value="/userservice/api")
     public String goUploadImg() {
+        try {
+            Thread.sleep(5000L);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         return "userservice1";
     }
 
